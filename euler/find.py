@@ -12,7 +12,6 @@ def find_cycle(graph, queue = [0], cycle = []):
                 graph[vertex][n] = 0
                 graph[n][vertex] = 0
                 find_cycle(graph, queue, cycle)
-                break
 
         cycle.append(vertex)
     
